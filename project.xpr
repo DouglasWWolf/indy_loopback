@@ -158,12 +158,6 @@
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
-        <CompFileExtendedInfo CompFileName="top_level.bd" FileRelPathName="ip/top_level_cmac_usplus_0_0/top_level_cmac_usplus_0_0.xci">
-          <Proxy FileSetName="top_level_cmac_usplus_0_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="top_level.bd" FileRelPathName="ip/top_level_cmac_0/top_level_cmac_0.xci">
-          <Proxy FileSetName="top_level_cmac_0"/>
-        </CompFileExtendedInfo>
         <CompFileExtendedInfo CompFileName="top_level.bd" FileRelPathName="ip/top_level_status_leds_0_0/top_level_status_leds_0_0.xci">
           <Proxy FileSetName="top_level_status_leds_0_0"/>
         </CompFileExtendedInfo>
@@ -203,11 +197,17 @@
         <CompFileExtendedInfo CompFileName="top_level.bd" FileRelPathName="ip/top_level_activity_mon_0_0/top_level_activity_mon_0_0.xci">
           <Proxy FileSetName="top_level_activity_mon_0_0"/>
         </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="top_level.bd" FileRelPathName="ip/top_level_cmac_control_ex_0_0/top_level_cmac_control_ex_0_0.xci">
-          <Proxy FileSetName="top_level_cmac_control_ex_0_0"/>
-        </CompFileExtendedInfo>
         <CompFileExtendedInfo CompFileName="top_level.bd" FileRelPathName="ip/top_level_cmac_control_ex_0_1/top_level_cmac_control_ex_0_1.xci">
           <Proxy FileSetName="top_level_cmac_control_ex_0_1"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="top_level.bd" FileRelPathName="ip/top_level_cmac_0/top_level_cmac_0.xci">
+          <Proxy FileSetName="top_level_cmac_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="top_level.bd" FileRelPathName="ip/top_level_cmac_usplus_0_0/top_level_cmac_usplus_0_0.xci">
+          <Proxy FileSetName="top_level_cmac_usplus_0_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="top_level.bd" FileRelPathName="ip/top_level_cmac_control_ex_0_0/top_level_cmac_control_ex_0_0.xci">
+          <Proxy FileSetName="top_level_cmac_control_ex_0_0"/>
         </CompFileExtendedInfo>
       </File>
       <File Path="$PGENDIR/sources_1/bd/top_level/hdl/top_level_wrapper.v">

@@ -29,14 +29,21 @@ set_clock_groups -name group_pcie_sysclk -asynchronous -group [get_clocks pcie_s
 #
 # LEDs
 #
-set_property -dict {PACKAGE_PIN AW26  IOSTANDARD LVCMOS18} [ get_ports LED[0] ]
-set_property -dict {PACKAGE_PIN AW23  IOSTANDARD LVCMOS18} [ get_ports LED[1] ]
-set_property -dict {PACKAGE_PIN AW25  IOSTANDARD LVCMOS18} [ get_ports LED[2] ]
-set_property -dict {PACKAGE_PIN AU23  IOSTANDARD LVCMOS18} [ get_ports LED[3] ]
+#set_property -dict {PACKAGE_PIN AW26  IOSTANDARD LVCMOS18} [ get_ports LED[0] ]
+#set_property -dict {PACKAGE_PIN AW23  IOSTANDARD LVCMOS18} [ get_ports LED[1] ]
+#set_property -dict {PACKAGE_PIN AW25  IOSTANDARD LVCMOS18} [ get_ports LED[2] ]
+#set_property -dict {PACKAGE_PIN AU23  IOSTANDARD LVCMOS18} [ get_ports LED[3] ]
 #set_property -dict {PACKAGE_PIN AU25  IOSTANDARD LVCMOS18} [ get_ports LED[4] ]
 #set_property -dict {PACKAGE_PIN AV23  IOSTANDARD LVCMOS18} [ get_ports LED[5] ]
 #set_property -dict {PACKAGE_PIN AW24  IOSTANDARD LVCMOS18} [ get_ports LED[6] ]
 #set_property -dict {PACKAGE_PIN AV25  IOSTANDARD LVCMOS18} [ get_ports LED[7] ]
+
+set_property -dict {PACKAGE_PIN AV25  IOSTANDARD LVCMOS18} [ get_ports led_green[0] ]
+set_property -dict {PACKAGE_PIN AW24  IOSTANDARD LVCMOS18} [ get_ports led_green[1] ]
+set_property -dict {PACKAGE_PIN AV23  IOSTANDARD LVCMOS18} [ get_ports led_green[2] ]
+set_property -dict {PACKAGE_PIN AU25  IOSTANDARD LVCMOS18} [ get_ports led_green[3] ]
+
+
 
 
 #

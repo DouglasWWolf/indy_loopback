@@ -1,7 +1,7 @@
 {
   "design": {
     "design_info": {
-      "boundary_crc": "0xEE69C00DA9D976AD",
+      "boundary_crc": "0xA5F03CEB4BCC056E",
       "device": "xcku15p-ffve1517-3-e",
       "gen_directory": "../../../../project.gen/sources_1/bd/top_level",
       "name": "top_level",
@@ -111,7 +111,7 @@
       }
     },
     "ports": {
-      "LED": {
+      "led_green": {
         "direction": "O",
         "left": "3",
         "right": "0"
@@ -1425,6 +1425,11 @@
             "xci_name": "top_level_axi_config_0_0",
             "xci_path": "ip/top_level_axi_config_0_0/top_level_axi_config_0_0.xci",
             "inst_hier_path": "pcie/axi_config",
+            "parameters": {
+              "DEFAULT_TXPRE": {
+                "value": "\"10100\""
+              }
+            },
             "reference_info": {
               "ref_type": "hdl",
               "ref_name": "axi_config",
@@ -2436,7 +2441,7 @@
       "status_leds_led_green_l": {
         "ports": [
           "status_leds/led_green",
-          "LED"
+          "led_green"
         ]
       }
     },
