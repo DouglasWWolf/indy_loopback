@@ -17,8 +17,8 @@ preplace port port-id_init_clk -pg 1 -lvl 3 -x 660 -y 340 -defaultsOSRD -right
 preplace portBus led_green -pg 1 -lvl 3 -x 660 -y 60 -defaultsOSRD
 preplace portBus qsfp_rst_l -pg 1 -lvl 3 -x 660 -y 450 -defaultsOSRD
 preplace portBus qsfp_lp -pg 1 -lvl 3 -x 660 -y 430 -defaultsOSRD
-preplace inst loopback -pg 1 -lvl 2 -x 480 -y 220 -swap {0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 23 19 20 21 17 18 16 22} -defaultsOSRD -pinDir qsfp0_gt right -pinY qsfp0_gt 0R -pinDir qsfp0_clk right -pinY qsfp0_clk 20R -pinDir qsfp1_gt right -pinY qsfp1_gt 40R -pinDir qsfp1_clk right -pinY qsfp1_clk 60R -pinDir init_clk right -pinY init_clk 120R -pinDir rsfec_enable left -pinY rsfec_enable 40L -pinBusDir tx_pre left -pinBusY tx_pre 60L -pinDir sys_resetn left -pinY sys_resetn 80L -pinDir active_0 left -pinY active_0 0L -pinDir active_1 left -pinY active_1 20L -pinDir aligned0 right -pinY aligned0 80R -pinDir aligned1 right -pinY aligned1 100R
-preplace inst pcie -pg 1 -lvl 1 -x 170 -y 220 -swap {0 1 2 3 4 5 6 7 10 11 12 8 9} -defaultsOSRD -pinDir pcie_mgt left -pinY pcie_mgt 0L -pinDir pcie_refclk left -pinY pcie_refclk 20L -pinDir RSFEC_ENABLE right -pinY RSFEC_ENABLE 40R -pinBusDir CMAC_TXPRE right -pinBusY CMAC_TXPRE 60R -pinDir resetn_out right -pinY resetn_out 80R -pinDir active0 right -pinY active0 0R -pinDir active1 right -pinY active1 20R
+preplace inst loopback -pg 1 -lvl 2 -x 480 -y 220 -swap {0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 23 19 20 21 17 18 16 22 24 25} -defaultsOSRD -pinDir qsfp0_gt right -pinY qsfp0_gt 0R -pinDir qsfp0_clk right -pinY qsfp0_clk 20R -pinDir qsfp1_gt right -pinY qsfp1_gt 40R -pinDir qsfp1_clk right -pinY qsfp1_clk 60R -pinDir init_clk right -pinY init_clk 120R -pinDir rsfec_enable left -pinY rsfec_enable 40L -pinBusDir tx_pre left -pinBusY tx_pre 60L -pinDir sys_resetn left -pinY sys_resetn 80L -pinDir active_0 left -pinY active_0 0L -pinDir active_1 left -pinY active_1 20L -pinDir aligned0 right -pinY aligned0 80R -pinDir aligned1 right -pinY aligned1 100R -pinBusDir tx_post left -pinBusY tx_post 100L -pinBusDir tx_diff left -pinBusY tx_diff 120L
+preplace inst pcie -pg 1 -lvl 1 -x 170 -y 220 -swap {0 1 2 3 4 5 6 7 10 11 12 8 9 13 14} -defaultsOSRD -pinDir pcie_mgt left -pinY pcie_mgt 0L -pinDir pcie_refclk left -pinY pcie_refclk 20L -pinDir RSFEC_ENABLE right -pinY RSFEC_ENABLE 40R -pinBusDir CMAC_TXPRE right -pinBusY CMAC_TXPRE 60R -pinDir resetn_out right -pinY resetn_out 80R -pinDir active0 right -pinY active0 0R -pinDir active1 right -pinY active1 20R -pinBusDir CMAC_TXPOST right -pinBusY CMAC_TXPOST 100R -pinBusDir CMAC_TXDIFF right -pinBusY CMAC_TXDIFF 120R
 preplace inst qsfp_pins -pg 1 -lvl 2 -x 480 -y 430 -swap {1 0} -defaultsOSRD -pinBusDir qsfp_rst_l right -pinBusY qsfp_rst_l 20R -pinBusDir qsfp_lp right -pinBusY qsfp_lp 0R
 preplace inst status_leds -pg 1 -lvl 2 -x 480 -y 60 -swap {4 1 2 3 0} -defaultsOSRD -pinDir qsfp0_up right -pinY qsfp0_up 60R -pinDir qsfp1_up right -pinY qsfp1_up 40R -pinDir active0 left -pinY active0 40L -pinDir active1 left -pinY active1 60L -pinBusDir led_green right -pinBusY led_green 0R
 preplace netloc init_clk_0_1 1 2 1 NJ 340
@@ -32,6 +32,8 @@ preplace netloc pcie_resetn_out 1 1 1 N 300
 preplace netloc qsfp_pins_qsfp_lp 1 2 1 N 430
 preplace netloc qsfp_pins_qsfp_rst_l 1 2 1 N 450
 preplace netloc status_leds_led_green_l 1 2 1 NJ 60
+preplace netloc pcie_CMAC_TXPOST 1 1 1 N 320
+preplace netloc pcie_CMAC_TXDIFF 1 1 1 N 340
 preplace netloc CLK_IN_D_0_1 1 0 1 NJ 240
 preplace netloc cmac_usplus_0_gt_serial_port 1 2 1 NJ 220
 preplace netloc eth_1_qsfp_gt 1 2 1 NJ 260
