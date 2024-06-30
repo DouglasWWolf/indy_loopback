@@ -26,14 +26,14 @@ preplace netloc loopback_active_0 1 1 1 320 100n
 preplace netloc loopback_active_1 1 1 1 340 120n
 preplace netloc loopback_aligned 1 2 1 610 120n
 preplace netloc loopback_aligned1 1 2 1 630 100n
+preplace netloc pcie_CMAC_TXDIFF 1 1 1 N 340
+preplace netloc pcie_CMAC_TXPOST 1 1 1 N 320
 preplace netloc pcie_CMAC_TXPRE 1 1 1 N 280
 preplace netloc pcie_RSFEC_ENABLE 1 1 1 N 260
 preplace netloc pcie_resetn_out 1 1 1 N 300
 preplace netloc qsfp_pins_qsfp_lp 1 2 1 N 430
 preplace netloc qsfp_pins_qsfp_rst_l 1 2 1 N 450
 preplace netloc status_leds_led_green_l 1 2 1 NJ 60
-preplace netloc pcie_CMAC_TXPOST 1 1 1 N 320
-preplace netloc pcie_CMAC_TXDIFF 1 1 1 N 340
 preplace netloc CLK_IN_D_0_1 1 0 1 NJ 240
 preplace netloc cmac_usplus_0_gt_serial_port 1 2 1 NJ 220
 preplace netloc eth_1_qsfp_gt 1 2 1 NJ 260
